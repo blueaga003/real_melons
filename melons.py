@@ -48,6 +48,7 @@ class InternationalMelonOrder(AbstractMelonOrder):
 class GovernmentMelonOrder(AbstractMelonOrder):
     """There will be no tax on government orders."""
 
+    order_type = "government"
     tax = 0
     passed_inspection = False
 
